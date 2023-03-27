@@ -41,7 +41,7 @@ class GameTableViewCell: UITableViewCell {
     func configure(for gameViewModel: Game.ViewModel) {
         self.gameViewModel = gameViewModel
 
-        labeTitle.text = gameViewModel.title + "\(gameViewModel.year)"
+        labeTitle.text = gameViewModel.title + " \(gameViewModel.year)"
         athletesCollectionView.reloadData()
     }
 }

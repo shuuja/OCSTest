@@ -92,6 +92,9 @@ class AthleteDetailViewController: UIViewController, AthleteDetailDisplayLogic {
         athlete = (interactor as! AthleteDetailDataStore).athlete
         athleteHeaderView.configure(athlete)
         
+        //setting title to athlete name
+        title = athlete.name
+        
         // Fetch the athlete's results
         Task { await interactor?.fetchAthleteResults(athleteID: athlete.athleteId ?? "") }
     }

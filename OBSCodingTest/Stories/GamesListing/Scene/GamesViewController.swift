@@ -34,6 +34,7 @@ class GamesViewController: UIViewController, GamesDisplayLogic {
     // MARK: - Properties
 
     @IBOutlet private weak var gamesTableView: UITableView!
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     private var games = [Game.ViewModel]()
     var interactor: GamesBusinessLogic?
     var router: (NSObjectProtocol & GamesRoutingLogic & GamesDataPassing)?
@@ -90,6 +91,7 @@ class GamesViewController: UIViewController, GamesDisplayLogic {
     }
 
     func displayPrepareGames(viewModel: Game.Prepare.ViewModel) {
+        activityIndicator.isHidden = true
         games = viewModel.games
         gamesTableView.reloadData()
     }
