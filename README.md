@@ -4,7 +4,6 @@
 3. [Arhitecture](#arhitecture)
 4. [Structure](#structure)
 5. [Deployment](#deployment)
-6. [API](#api)
 
 # OCS Coding Test
 OCS Coding Test Project which shows list of Olympic Games with Athletes participated and details of athelets
@@ -52,8 +51,3 @@ Keep in mind that deploying an iOS app to the App Store requires having an Apple
 This will create a signed IPA file that can be installed on iOS devices.
 4. Follow the prompts in the distribution wizard to complete the distribution process.
 5. Once the distribution is complete, you can use the IPA file to install the app on iOS devices
-
-
-# API 
-* We are using a REST API
-* List of API calls is [here](https://petstore.swagger.io/#/) 
